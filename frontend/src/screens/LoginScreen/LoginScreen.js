@@ -63,7 +63,7 @@ const LoginScreen = () => {
           </Button>
           <Row className="py-3">
             <Col>
-              New User ?<Link to="/register">Register here</Link>
+              New User? <Link to="/register">Register here</Link>
             </Col>
           </Row>
         </Form>

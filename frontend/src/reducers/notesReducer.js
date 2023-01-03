@@ -26,19 +26,6 @@ export const noteListReducer = (state = { notes: [] }, action) => {
   }
 };
 
-export const noteCreateReducer = (state = {}, action) => {
-  switch (action.type) {
-    case NOTES_CREATE_REQUEST:
-      return { loading: true };
-    case NOTES_CREATE_SUCCESS:
-      return { loading: false, success: true };
-    case NOTES_CREATE_FAIL:
-      return { loading: false, error: action.payload };
-    default:
-      return state;
-  }
-};
-
 export const noteUpdateReducer = (state = {}, action) => {
   switch (action.type) {
     case NOTES_UPDATE_REQUEST:
